@@ -4,10 +4,11 @@ const product = products[0];
 
 btncolors.map(function(button) {
     button.addEventListener('click', function(){
-        console.log(product);
+        console.log(button);
         const color = button.lastElementChild.textContent.toLowerCase();
         
-        product.src='./assets/images/' + color + '-model.png';
+        //product.src='./assets/images/' + color + '-model.png';
+        product.src=`./assets/images/${color}-model.png`;
 
     });
 });

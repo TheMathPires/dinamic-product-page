@@ -1,5 +1,5 @@
 .info {
-    padding-top: 15%;
+    padding-top: 5%;
 }
 .colors {
     display: inline-flex;
@@ -16,7 +16,9 @@
     border-radius: 5px;
     padding-bottom: 35px;
 }
-
-a{
+a {
     cursor: pointer;
+}
+.product-image {
+    max-width: 400px;
 }
