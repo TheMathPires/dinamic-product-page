@@ -10,17 +10,10 @@ btncolors.map(function(button) {
     });
 });
 
-let rightSide = document.getElementsByClassName('info');
-let leftSide = document.getElementsByClassName('product'); 
-let mainRow = Array.from(document.getElementsByClassName('row'))[0];
+let c_info = document.getElementById('info');
+let c_product = document.getElementById('product'); 
+let c_mainRow = document.getElementById('main');
 
-document.querySelector('.container .row').parentNode.removeChild(rightSide);
-
-// Create a new element
-//var newColumn = document.createElement('div');
-
-// Get the reference node
-//var referenceNode = document.querySelector('.info');
-
-// Insert the new node before the reference node
-//referenceNode.before(newColumn);
+c_info.remove();
+c_product.remove();
+c_mainRow.append(c_info, c_product);
