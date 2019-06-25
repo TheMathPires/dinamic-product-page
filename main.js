@@ -17,3 +17,10 @@ let c_mainRow = document.getElementById('main');
 c_info.remove();
 c_product.remove();
 c_mainRow.append(c_info, c_product);
+
+let button = document.createElement('button');
+let btn_content = document.createTextNode('VER OUTROS MODELOS');
+
+button.append(btn_content);
+let element = document.getElementById('info');
+element.appendChild(button);
