@@ -1,5 +1,5 @@
-const btncolors = Array.from(document.getElementsByClassName("btn-color"));
-const products = Array.from(document.getElementsByClassName("product-image"));
+const btncolors = Array.from(document.getElementsByClassName('btn-color'));
+const products = Array.from(document.getElementsByClassName('product-image'));
 const product = products[0];
 
 btncolors.map(function(button) {
@@ -24,3 +24,15 @@ let btn_content = document.createTextNode('VER OUTROS MODELOS');
 button.append(btn_content);
 let element = document.getElementById('info');
 element.appendChild(button);
+
+button.classList.add('btn-more');
+let moreModels = document.createElement('div');
+moreModels.classList.add('more-models');
+let buttonOther = document.querySelector('.btn-more');
+
+button.addEventListener('click', function(button){
+    c_info.appendChild(moreModels);
+    moreModels.innerHTML= '<div class="col-md-10 color others"> <a class="btn-color"> <img class="other-model" src="assets/images/iphone-xs.jpg"> <span>iPhone XS</span> </div>';
+    btn_content.remove();
+    buttonOther.remove();
+});
